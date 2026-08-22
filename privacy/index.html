@@ -19,6 +19,7 @@
 <li>Nit contains no analytics, advertising, or crash-reporting SDKs.</li>
 <li>Your phone talks directly to GitHub and to the AI provider you configure, over TLS.</li>
 <li>Tokens and API keys are stored in the iOS Keychain and never leave your device except in requests to the service they belong to.</li>
+<li>Notifications are created on your device. Nit has no push server.</li>
 </ul>
 
 <h2>Data stored on your device</h2>
@@ -42,6 +43,7 @@
 
 <h2>Permissions</h2>
 <p>Nit uses the network to reach GitHub and your AI provider, and registers a share extension so you can send PR links to it from other apps. It requests no access to contacts, location, photos, camera, or microphone.</p>
+<p><strong>Notifications.</strong> If you allow them, sharing a pull request to Nit posts a notification you tap to open that PR — iOS gives a share extension no other way to reach the app. The notification is created on your device and sent nowhere: Nit has no push server and receives no remote notifications. It names the repository and pull request number, so that text can appear on your lock screen; turn off <strong>Show Previews</strong> for Nit in iOS Settings to hide it. Decline the permission and a shared PR waits for you the next time you open Nit instead.</p>
 
 <h2>Children</h2>
 <p>Nit is a developer tool and is not directed at children under 13.</p>
