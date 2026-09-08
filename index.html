@@ -4,21 +4,140 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Nit — review GitHub pull requests on your phone</title>
-<link rel="stylesheet" href="_style.css">
+<meta name="description" content="Nit is a native iOS app for reviewing GitHub pull requests with your own AI: a proper diff, an AI walkthrough, Ask AI on any hunk, then comment, approve, and merge. No backend, no telemetry.">
+<link rel="canonical" href="https://bkrem.github.io/nit-site/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nit — review GitHub pull requests on your phone">
+<meta property="og:description" content="Select a hunk. Ask your own model. Merge from bed. Real diff rendering, your API keys, nothing on a server.">
+<meta property="og:url" content="https://bkrem.github.io/nit-site/">
+<meta property="og:image" content="https://bkrem.github.io/nit-site/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/JetBrainsMono-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="_landing.css">
 </head>
 <body>
+<div class="wrap">
+
+<header class="top">
+  <a class="lockup" href="./" aria-label="Nit">
+    <svg viewBox="0 0 44 44" aria-hidden="true"><g fill="currentColor"><rect x="0" y="0" width="6" height="44" rx="3"/><rect x="0" y="0" width="17" height="6" rx="3"/><rect x="0" y="38" width="17" height="6" rx="3"/><rect x="38" y="0" width="6" height="44" rx="3"/><rect x="27" y="0" width="17" height="6" rx="3"/><rect x="27" y="38" width="17" height="6" rx="3"/></g><rect x="19" y="11" width="6" height="6" rx="1.5" fill="#5DA37D"/><rect x="19" y="27" width="6" height="6" rx="1.5" fill="#C0655A"/></svg>
+    <span class="wordmark" aria-hidden="true">nit</span>
+  </a>
+  <nav aria-label="Site">
+    <a href="https://testflight.apple.com/join/sMADfKGQ">TestFlight</a>
+    <a href="privacy/">Privacy</a>
+    <a href="support/">Support</a>
+  </nav>
+</header>
+
 <main>
-<h1>Nit</h1>
-<p class="muted">Review GitHub pull requests on your phone, using your own AI.</p>
-<p>Nit is a native iOS app for the review you would otherwise put off until you are back at a laptop. Open a PR, read a diff that is readable on a phone, select a few lines and ask your own model about them, then comment, set a verdict, and merge.</p>
-<p>Nit has no backend. Your phone talks straight to GitHub and to whichever AI provider you configure. There is no account to create and no analytics.</p>
-<h2>Links</h2>
-<ul>
-<li><a href="privacy/">Privacy policy</a></li>
-<li><a href="support/">Support</a></li>
-</ul>
-<hr>
-<footer>© 2026 Ben Kremer</footer>
+
+<section class="hero">
+  <div>
+    <h1>You run your agents from your phone. Review the last mile there too.</h1>
+    <p class="lede">Nit is a native iOS app for reviewing GitHub pull requests: a proper diff, an AI walkthrough, and Ask AI on any hunk. Comment, approve, merge. No laptop.</p>
+    <ul class="chips" aria-label="Highlights">
+      <li>bring your own key</li>
+      <li>no telemetry</li>
+      <li>iPhone only</li>
+    </ul>
+    <div class="cta">
+      <a class="button" href="https://testflight.apple.com/join/sMADfKGQ">Join the TestFlight beta</a>
+      <span class="muted">Requires iOS 26 and the TestFlight app.</span>
+    </div>
+  </div>
+  <div class="phone"><img src="assets/screenshots/diff-selection.webp" width="780" height="1694" alt="A syntax-highlighted diff in Nit with five lines selected and an Ask AI button in the floating bar" fetchpriority="high"></div>
+</section>
+
+<section id="why">
+  <p class="label">Why</p>
+  <div class="prose">
+    <h2>The last mile of an agent's work is a pull request.</h2>
+    <p>If you can hand work to coding agents from your phone, you also need to check what they produced from your phone: read the diff, ask the questions, ship it or send it back. That is the part where GitHub on a phone doesn't cut it: a wrapped diff, no review loop, and no AI in reach.</p>
+    <p>Nit renders the diff the way a desktop tool does and puts your own model one tap away, so the review finishes where the work started.</p>
+  </div>
+</section>
+
+<section id="features">
+  <p class="label">What it does</p>
+  <div class="features">
+
+    <article class="feature">
+      <div>
+        <h3>Open a PR from anywhere</h3>
+        <p>Paste a GitHub URL, send a link to Nit through the iOS share sheet, or pick a PR from your inbox of requested reviews. Recently opened PRs stay cached, so they open offline too.</p>
+      </div>
+      <div class="phone"><img src="assets/screenshots/home.webp" width="780" height="1694" alt="Nit's home screen with a URL field and an inbox of recent pull requests" loading="lazy"></div>
+    </article>
+
+    <article class="feature reverse">
+      <div>
+        <h3>Walkthrough</h3>
+        <p>Generate an AI-narrated tour of the PR before you read a line: what changed, why it matters, and which stops deserve a close look, in reading order.</p>
+      </div>
+    </article>
+
+    <article class="feature">
+      <div>
+        <h3>Ask AI</h3>
+        <p>Long-press to select lines or a whole hunk, then ask your own model about exactly that code. Presets like <strong>What could break?</strong> and <strong>Security review</strong> are one tap, follow-ups keep the thread, and any answer becomes a review comment.</p>
+      </div>
+      <div class="phone"><img src="assets/screenshots/ask-ai.webp" width="780" height="1694" alt="An Ask AI thread in Nit explaining a selected change, with a Make this a comment link" loading="lazy"></div>
+    </article>
+
+  </div>
+</section>
+
+<section id="review">
+  <p class="label">Then finish the review</p>
+  <div class="prose">
+    <h2>Comment, set a verdict, merge.</h2>
+    <p>Line comments batch into one pending review. Submit it as a comment, an approval, or a request for changes, then merge with a merge commit, squash, or rebase. Nit only shows write actions when your token has write access.</p>
+  </div>
+  <div class="pair">
+    <div class="phone"><img src="assets/screenshots/review-sheet.webp" width="780" height="1694" alt="Nit's submit review sheet with Comment, Approve, and Request changes" loading="lazy"></div>
+    <div class="phone"><img src="assets/screenshots/merge-sheet.webp" width="780" height="1694" alt="Nit's merge sheet with the squash and merge method selected" loading="lazy"></div>
+  </div>
+</section>
+
+<section id="ai">
+  <p class="label">Bring your own AI</p>
+  <ul class="facts">
+    <li><h3>API keys</h3><p>Anthropic, OpenAI, and OpenRouter. Pick any model the provider offers, including OpenRouter's batch models for cheaper walkthroughs.</p></li>
+    <li><h3>ChatGPT subscription</h3><p>Sign in with the ChatGPT account you already pay for. No API key needed.</p></li>
+    <li><h3>Only what you select</h3><p>Nit sends the selected lines plus surrounding file context, fitted to a token cap, and shows the token counts on every answer.</p></li>
+  </ul>
+</section>
+
+<section id="privacy">
+  <p class="label">Private by design</p>
+  <ul class="facts">
+    <li><h3><span class="dot add"></span>No tracking, no telemetry</h3><p>No analytics, crash reporting, or third-party SDKs. There is no Nit server and no account.</p></li>
+    <li><h3><span class="dot del"></span>Keys never leave the Keychain</h3><p>Tokens and API keys go into the iOS Keychain the moment you enter them and are never logged.</p></li>
+    <li><h3><span class="dot merge"></span>Device to provider, over TLS</h3><p>Requests go from your phone straight to GitHub and to the AI provider you configured. Nothing in between. See the <a href="privacy/">privacy policy</a>.</p></li>
+  </ul>
+</section>
+
+<section class="close">
+  <h2>Try the beta</h2>
+  <p>Nit is a passion project by one developer, in TestFlight. Feedback goes to <a href="mailto:contact@bkrem.dev">contact@bkrem.dev</a>.</p>
+  <div class="cta">
+    <a class="button" href="https://testflight.apple.com/join/sMADfKGQ">Join the TestFlight beta</a>
+    <span class="muted">Requires iOS 26 and the TestFlight app.</span>
+  </div>
+</section>
+
 </main>
+
+<footer>
+  <span>© 2026 Ben Kremer</span>
+  <span><a href="privacy/">Privacy</a> · <a href="support/">Support</a></span>
+</footer>
+
+</div>
 </body>
 </html>
