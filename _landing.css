@@ -84,11 +84,11 @@ section h2{font-size:clamp(1.6rem,3vw,2.25rem);margin-bottom:1rem}
 /* Feature rows */
 .features{display:grid;gap:4rem}
 .feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:3rem;align-items:center}
-.feature.reverse .phone{order:-1}
+.feature.reverse .phone,.feature.reverse .pair{order:-1}
 .feature h3{font-size:clamp(1.4rem,2.6vw,1.9rem);margin-bottom:.75rem}
 .feature p{color:var(--label);font-size:1.1rem;max-width:30rem}
 .feature .phone{width:min(100%,300px)}
-.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem;max-width:40rem;margin-top:1.5rem}
+.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;max-width:26rem;margin:0 auto}
 .pair .phone{width:100%}
 
 /* Fact list */
@@ -110,7 +110,7 @@ footer a{color:var(--label)}
   .top{padding:1.25rem 0}
   .hero{grid-template-columns:1fr;gap:2.5rem;padding:2rem 0 3rem}
   .feature{grid-template-columns:1fr;gap:1.75rem}
-  .feature.reverse .phone{order:0}
+  .feature.reverse .phone,.feature.reverse .pair{order:0}
   .feature .phone,.hero .phone{width:min(100%,260px)}
   section{padding:2.75rem 0}
 }
