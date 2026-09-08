@@ -76,7 +76,7 @@ nav a:hover{color:var(--ink);text-decoration:none}
 /* Sections */
 section{padding:3.5rem 0;border-top:1px solid var(--hairline)}
 section h2{font-size:clamp(1.6rem,3vw,2.25rem);margin-bottom:1rem}
-.label{font:500 13px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--label);margin:0 0 1rem}
+section .label{font:500 13px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--label);margin:0 0 1rem}
 .prose{max-width:40rem}
 .prose p{color:var(--label);font-size:1.1rem}
 .prose strong{color:var(--ink);font-weight:600}
