@@ -96,10 +96,7 @@ section h2{font-size:clamp(1.6rem,3vw,2.25rem);margin-bottom:1rem}
 .facts li{background:var(--surface);border:1px solid var(--hairline);border-radius:14px;padding:1.25rem}
 .facts h3{font-size:1.05rem;margin-bottom:.4rem}
 .facts p{color:var(--label);margin:0;font-size:1rem}
-.dot{display:inline-block;width:.55em;height:.55em;border-radius:2px;margin-right:.5em;vertical-align:baseline}
-.dot.add{background:var(--addition)}
-.dot.del{background:var(--deletion)}
-.dot.merge{background:var(--merge)}
+.emoji{margin-right:.45em}
 
 /* Closing */
 .close{text-align:center}
