@@ -35,7 +35,7 @@ p{margin:0 0 1rem}
 .muted{color:var(--label)}
 
 /* Header */
-.top{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.5rem 0}
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;padding:1.5rem 0}
 .lockup{display:inline-flex;align-items:center;gap:.6rem;color:var(--ink)}
 .lockup:hover{text-decoration:none}
 .lockup svg{width:26px;height:26px;flex:none}
@@ -109,6 +109,8 @@ footer a{color:var(--label)}
 
 @media (max-width:720px){
   .top{padding:1.25rem 0}
+  nav{gap:.85rem;font-size:.9rem}
+  .theme{width:32px;height:32px}
   .hero{grid-template-columns:1fr;gap:2.5rem;padding:2rem 0 3rem}
   .feature{grid-template-columns:1fr;gap:1.75rem}
   .feature.reverse .phone,.feature.reverse .pair{order:0}
