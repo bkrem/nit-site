@@ -1,14 +1,9 @@
 # nit-site
 
-Public pages for [Nit](https://github.com/bkrem/nit), served by GitHub Pages at https://bkrem.github.io/nit-site/.
+Nit's public pages moved to https://bkrem.github.io/nit/. Their source lives in the `nit/` folder of [bkrem/bkrem.github.io](https://github.com/bkrem/bkrem.github.io).
 
-- `index.html` — landing page, styled by `_landing.css` (brand tokens from Nit's `STYLEGUIDE.md`)
-- `privacy/index.html` — privacy policy (linked from App Store Connect), styled by `_style.css`
-- `support/index.html` — support page (linked from App Store Connect), styled by `_style.css`
-- `faq/index.html` — frequently asked questions, styled by `_style.css`
-- `assets/screenshots/` — 780 px WebP frames from the App Store screenshot set (dark mode, public PRs only)
-- `assets/fonts/` — JetBrains Mono woff2 (OFL, see `OFL.txt`), self-hosted so the page makes no third-party request
-- `assets/og.png` — the 1200×630 social preview, rendered from `assets/og-source.html` (instructions in that file); bump the `?v=` on the `og:image` URL in `index.html` after re-rendering so chat apps refetch it
-- `favicon.svg`, `apple-touch-icon.png` — the mark and the app icon
+This repository serves redirects only, so links to the old https://bkrem.github.io/nit-site/ URLs keep working:
 
-No build step: edit the HTML and push to `main`.
+- `index.html`, `privacy/index.html`, `support/index.html`, and `faq/index.html` redirect to the matching page under `/nit/`, keeping the query string and fragment.
+- `404.html` maps any other `/nit-site/<path>` to `/nit/<path>`.
+- `assets/og.png` stays so link previews that cached the old image URL still load.
